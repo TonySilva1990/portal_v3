@@ -1,15 +1,134 @@
 :root {
-    --bg-color-lilaz: rgb(59, 24, 124);
+/*================[ICONS]===============*/
+    --icon-size:2rem;
+    --icons-white:rgb(93, 93, 93);
+    --bg-color-bar: #03A60E;
+    --card-width:16.5rem;
+    --card-height:10rem;
+    --card-justify: between;
+    --card-margin:.5rem
+
+}
+.cabecalho-card
+{
+    display:flex;
+    align-items: center;
+    flex-direction:row;
 }
 
-.bg-color-primary {
-    background-color: var(--bg-color-lilaz);
+.icon
+{
+    position: absolute;
+    left: 10rem;
+    top: .2rem;
+    margin-left:.5rem;
+    font-size: 3rem;
+}
+
+html {
+    font-size: 1rem;
+  }
+  
+  @include media-breakpoint-up(sm) {
+    html {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @include media-breakpoint-up(md) {
+    html {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @include media-breakpoint-up(lg) {
+    html {
+      font-size: 1.6rem;
+    }
+  }
+
+body
+{
+    
+    
+}
+
+.footer
+{
+    background-color: var(--bg-color-bar);
+    height: 300px;
+}
+
+.footer-heigth
+{
+max-height: 200px;    
+}
+
+.card
+{
+    background-color:rgb(78, 78, 78);
+    transition: 0.1s ease-in-out;
+}
+.card:hover
+{
+    background-color:var(--bg-color-bar);
+}
+.card-margin
+{
+    margin: var(--card-margin);
+}
+
+.card-justify
+{
+    justify-content: var(--card-justify);
+}
+.card-width
+{
+    max-width: var(--card-width);
+    max-height:var(--card-height);
+}
+.bg-color-bar {
+    background-color: var(--bg-color-bar);
+    
+}
+.icon-color
+{
+    color: var(--icons-white);
+}
+.form-cont
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.icon-size
+{
+font-size: var(--icon-size);
 }
 
 .home {
-    background-color: rgb(177, 177, 177);
+    
+    background-image: url(/img/bg-servicos.png);
+    background-attachment: fixed;
+    overflow: hidden;
+    max-height: 500px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 73px;
+    
+}
+
+.top-title
+{
+    font-size: 40px;
 }
 
 .home img {
-    width: 300px;
+    margin-top: 10px;
+    width: 640px;
+    box-sizing: border-box;
+}
+
+.container
+{
 }

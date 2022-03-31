@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/style.css">
     <title>Portal_União</title>
 </head>
 
@@ -15,21 +16,21 @@
 
 
     <header>
-        <nav class="navbar navbar-expand-sm navbar-light bg-color-primary">
+        <nav class="navbar navbar-expand-md navbar-light bg-color-bar fixed-top">
             <div class="container">
                 <a href="navbar-brand">
-                    <img src="/img/Mono_Branca.png" width="143" alt="">
+                    <img src="/img/logo_branco.svg" width="143" alt="">
                 </a>
 
-                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-menu-primary">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-menu-primary" aria-controls="nav-menu-primary" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="material-icons-outlined navbar-toggler-icon">
                         
                         </span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="nav-menu-primary">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item ">
+                    <ul class="navbar-nav text-nowrap ml-auto">
+                        <li class="nav-item active">
                             <a href="" class="nav-link text-light">a prefeitura</a>
                         </li>
                         <li class="nav-item">
@@ -48,10 +49,12 @@
                             <a href="" class="nav-link text-light">ouvidoria</a>
                         </li>
                     </ul>
-                    <form class="form-inline">
-                        <input class="form-control mr-sm-2 ml-4" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-                        <button type="button" class="btn btn-light">Buscar</button>
+                    <div class="form-cont mt-2 mt-md-0">
+                    <form class="form-inline flex-nowrap mt-2 mt-md-0">
+                    <input type="text" class="form-control mr-scard-margin" placeholder="Porcurar" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0 ml-2" type="submit">Buscar</button>
                     </form>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -60,16 +63,154 @@
     <section class="home">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    texto
+                <div class="col-md-6 d-flex">
+                <div class="align-self-center">
+                    <h1 class="display-4 top-title text-left ">Portal da transparência
+                        do município de União dos Palmares
+                    </h1>
+                    <p class="text-justify ">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,</p>
+
+                    <p class="text-dark">Siga nossas redes sociais
+                        <a href="" class="btn">
+                            <i class='bx bxl-instagram icon-color icon-size'></i>
+                            
+                        </a>
+                        <a href="" class="btn">
+                            
+                            <i class='bx bxl-meta icon-color icon-size'></i>
+                        </a>
+                        </p>
                 </div>
-                <div class="col-md-6">
-                    <img src="/img/Woman.png" class="ml-auto" " alt=" ">
+                
+                </div>
+                <div class="col-md-6 d-none d-md-block">
+                    <img src="/img/uni_strokeSvg.svg" class="ml-auto img-fluid" alt=" ">
                 </div>
             </div>
         </div>
     </section>
+<section class="mt-3">
+    <div class="container">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="https://source.unsplash.com/random/800x200" alt="Primeiro Slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="https://source.unsplash.com/random/801x200" alt="Segundo Slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="https://source.unsplash.com/random/802x200" alt="Terceiro Slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Próximo</span>
+            </a>
+          </div>
+    </div>
+</section>
+<section class="mt-3"><!--start content cards-->
+    <div class="container d-flex justify-content-between">
 
+        <div class="card text-white  m-1">
+            <div class="card-header text-uppercase font-weight-bold just">
+                <h2 class="cabecalho-card">
+                    <span>Covid-19</span>
+                    <i class='bx bxs-virus icon'></i>
+                </h2>
+            </div>
+                
+            <div class="card-body">
+              <h5 class="card-title">Tudo Sobre</h5>
+              <p class="card-text">Encontre aqui gastos, contratações e legislações do estado referente a pandemia causada pelo Conona vírus</p>
+            </div>
+          </div>
+
+          <div class="card text-white m-1">
+            <div class="card-header text-uppercase font-weight-bold">Cabeçalho</div>
+            <div class="card-body">
+              <h5 class="card-title">Título de Card Secondary</h5>
+              <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+            </div>
+          </div>
+
+          <div class="card text-white m-1">
+            <div class="card-header text-uppercase font-weight-bold">Cabeçalho</div>
+            <div class="card-body">
+              <h5 class="card-title">Título de Card Secondary</h5>
+              <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+            </div>
+          </div>
+
+          <div class="card text-white m-1">
+            <div class="card-header text-uppercase font-weight-bold">Cabeçalho</div>
+            <div class="card-body">
+              <h5 class="card-title">Título de Card Secondary</h5>
+              <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+            </div>
+          </div>
+
+    </div>
+</section><!--end content cards-->
+<section class="footer mt-3">
+<div class="container">
+    <div class="row align-items-center">
+<div class="col-sm-3">
+<div class="container">
+    <a class="nav-link dropdown-toggle text-light mt-5" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Link dropdown
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item" href="#">Ação</a>
+        <a class="dropdown-item" href="#">Outra ação</a>
+        <a class="dropdown-item" href="#">Algo mais aqui</a>
+      </div>
+</div>
+</div>
+<div class="col-sm-3">
+    <div class="container">
+        <a class="nav-link dropdown-toggle text-light mt-5" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Link dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Ação</a>
+            <a class="dropdown-item" href="#">Outra ação</a>
+            <a class="dropdown-item" href="#">Algo mais aqui</a>
+          </div>
+    </div>
+</div>
+<div class="col-sm-3">
+    <div class="container">
+        <a class="nav-link dropdown-toggle text-light mt-5" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Link dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Ação</a>
+            <a class="dropdown-item" href="#">Outra ação</a>
+            <a class="dropdown-item" href="#">Algo mais aqui</a>
+          </div>
+    </div>
+</div>
+<div class="col-sm-3">
+    <div class="container">
+        <a class="nav-link mt-5 dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Link dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Ação</a>
+            <a class="dropdown-item" href="#">Outra ação</a>
+            <a class="dropdown-item" href="#">Algo mais aqui</a>
+          </div>
+    </div>
+</div>
+    </div>
+</div>
+</section>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
