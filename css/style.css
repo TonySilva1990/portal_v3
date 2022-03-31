@@ -1,0 +1,15 @@
+:root {
+    --bg-color-lilaz: rgb(59, 24, 124);
+}
+
+.bg-color-primary {
+    background-color: var(--bg-color-lilaz);
+}
+
+.home {
+    background-color: rgb(177, 177, 177);
+}
+
+.home img {
+    width: 300px;
+}
